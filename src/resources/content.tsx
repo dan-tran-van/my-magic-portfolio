@@ -206,7 +206,7 @@ const about: About = {
       {
         title: "Django",
         description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+          <>Able to rapid prototype with Django and related technologies.</>
         ),
         tags: [
           {
