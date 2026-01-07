@@ -15,7 +15,7 @@ const person: Person = {
   lastName: "Tran",
   name: `Dan Tran`,
   role: "Full Stack Developer",
-  avatar: "/images/avatar.jpg",
+  avatar: "/images/avatar-2.jpg",
   email: "dantran@trangtranh.com",
   location: "Asia/Ho_Chi_Minh", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "Vietnamese", "Japanese"], // optional: Leave the array empty if you don't want to display languages
@@ -116,10 +116,20 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for
-        transforming complex challenges into simple, elegant design solutions.
-        Her work spans digital interfaces, interactive experiences, and the
-        convergence of design and technology.
+        <div>
+          I’m a self-taught full-stack web developer and solo startup founder
+          passionate about building the next generation of social web
+          experiences. I build with Next.js and Django and am currently
+          launching a social platform with integrated video sharing and unique
+          support for vertical languages at layout and component levels.
+        </div>
+        <div>
+          After leaving university in 2023 to focus on this journey, I’ve grown
+          my skills through hands-on learning and community support, earning
+          backing from Microsoft for Startups and AWS Activate along the way.
+          I’m seeking web development roles from internship to junior/mid-level
+          where I can contribute to impactful products and continue to learn.
+        </div>
       </>
     ),
   },
@@ -128,9 +138,9 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Du gian Private Enterprise",
+        timeframe: "2024 - Present",
+        role: "Full Stack Web Developer",
         achievements: [
           <>
             Redesigned the UI/UX for the FLY platform, resulting in a 20%
@@ -151,22 +161,22 @@ const about: About = {
           },
         ],
       },
-      {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
-        achievements: [
-          <>
-            Developed a design system that unified the brand across multiple
-            platforms, improving design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line,
-            contributing to a 15% increase in overall company revenue.
-          </>,
-        ],
-        images: [],
-      },
+      // {
+      //   company: "Creativ3",
+      //   timeframe: "2018 - 2022",
+      //   role: "Lead Designer",
+      //   achievements: [
+      //     <>
+      //       Developed a design system that unified the brand across multiple
+      //       platforms, improving design consistency by 40%.
+      //     </>,
+      //     <>
+      //       Led a cross-functional team to launch a new product line,
+      //       contributing to a 15% increase in overall company revenue.
+      //     </>,
+      //   ],
+      //   images: [],
+      // },
     ],
   },
   studies: {
@@ -174,12 +184,12 @@ const about: About = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "University of Economics Ho Chi Minh City",
+        description: <>Studied electronic commerce (Incomplete).</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Hanoi University of Science and Technology",
+        description: <>Studied mechatronics (Incomplete).</>,
       },
     ],
   },
@@ -188,26 +198,20 @@ const about: About = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
+        title: "Django",
         description: (
           <>Able to prototype in Figma with Once UI with unnatural speed.</>
         ),
         tags: [
           {
-            name: "Figma",
-            icon: "figma",
+            name: "Django",
+            icon: "django",
           },
         ],
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
+            src: "/images/projects/project-01/comics.png",
             alt: "Project image",
             width: 16,
             height: 9,
@@ -237,6 +241,33 @@ const about: About = {
         images: [
           {
             src: "/images/projects/project-01/cover-04.jpg",
+            alt: "Project image",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "Figma",
+        description: (
+          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+        ),
+        tags: [
+          {
+            name: "Figma",
+            icon: "figma",
+          },
+        ],
+        // optional: leave the array empty if you don't want to display images
+        images: [
+          {
+            src: "/images/projects/project-01/cover-02.jpg",
+            alt: "Project image",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/project-01/cover-03.jpg",
             alt: "Project image",
             width: 16,
             height: 9,
