@@ -22,7 +22,16 @@ import {
   PiImageDuotone,
 } from "react-icons/pi";
 
-import { SiJavascript, SiNextdotjs, SiFigma, SiSupabase } from "react-icons/si";
+import {
+  SiJavascript,
+  SiNextdotjs,
+  SiFigma,
+  SiSupabase,
+  SiTypescript,
+  SiRedis,
+  SiMysql,
+  SiDjango,
+} from "react-icons/si";
 
 import {
   FaDiscord,
@@ -38,7 +47,7 @@ import {
   FaReddit,
   FaTelegram,
 } from "react-icons/fa6";
-import { DiDjango } from "react-icons/di";
+import { GrMysql } from "react-icons/gr";
 
 export const iconLibrary: Record<string, IconType> = {
   arrowUpRight: HiArrowUpRight,
@@ -73,7 +82,10 @@ export const iconLibrary: Record<string, IconType> = {
   reddit: FaReddit,
   telegram: FaTelegram,
   instagram: FaInstagram,
-  django: DiDjango,
+  django: SiDjango,
+  typescript: SiTypescript,
+  mysql: GrMysql,
+  redis: SiRedis,
 };
 
 export type IconLibrary = typeof iconLibrary;

@@ -109,7 +109,7 @@ const about: About = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com",
+    link: "https://calendar.app.google/zp2mBKz7d5k97aVA9",
   },
   intro: {
     display: true,
@@ -213,6 +213,14 @@ const about: About = {
             name: "Django",
             icon: "django",
           },
+          {
+            name: "MySQL",
+            icon: "mysql",
+          },
+          {
+            name: "Redis",
+            icon: "redis",
+          },
         ],
         // optional: leave the array empty if you don't want to display images
         images: [
@@ -227,7 +235,7 @@ const about: About = {
       {
         title: "Next.js",
         description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
+          <>Building next gen apps with Next.js + Tailwind/SCSS + TypeScript.</>
         ),
         tags: [
           {
@@ -239,8 +247,8 @@ const about: About = {
             icon: "nextjs",
           },
           {
-            name: "Supabase",
-            icon: "supabase",
+            name: "TypeScript",
+            icon: "typescript",
           },
         ],
         // optional: leave the array empty if you don't want to display images
@@ -256,7 +264,7 @@ const about: About = {
       {
         title: "Figma",
         description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+          <>Able to prototype in Figma with complex internationalization.</>
         ),
         tags: [
           {
