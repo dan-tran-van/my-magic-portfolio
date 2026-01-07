@@ -143,12 +143,18 @@ const about: About = {
         role: "Full Stack Web Developer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20%
-            increase in user engagement and 30% faster load times.
+            Founded and developed production web application from scratch,
+            managing full product lifecycle: ideation, UI/UX, frontend & backend
+            implementation, deployment, and cloud infrastructure
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows,
-            enabling designers to iterate 50% faster.
+            Implemented complex internationalization features including
+            writing-mode and logical properties for bidirectional and vertical
+            text layouts
+          </>,
+          <>
+            Secured acceptance into Microsoft for Startups Founders Hub and AWS
+            Activate programs
           </>,
         ],
         images: [

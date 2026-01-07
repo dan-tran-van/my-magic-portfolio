@@ -1,12 +1,9 @@
 ---
 title: "Building Torangu, a Social Media supports vertical languages"
-publishedAt: "2026-01-06"
-summary: "Development of a flexible and highly customizable design system using Next.js for front-end and Figma for design collaboration."
+publishedAt: "2026-01-07"
+summary: "Development of an internationalized social platform with advanced vertical and horizontal writing-mode support using Next.js and React."
 images:
   - "/images/projects/project-01/comics.png"
-  - "/images/projects/project-01/cover-02.jpg"
-  - "/images/projects/project-01/cover-03.jpg"
-  - "/images/projects/project-01/cover-04.jpg"
 team:
   - name: "Dan Tran"
     role: "Software Engineer"
@@ -14,28 +11,52 @@ team:
     linkedIn: "https://www.linkedin.com/in/dan-tran-van/"
 ---
 
+# Torangu (Trang tranh)
+
 ## Overview
 
-Development of a flexible and highly customizable design system using Next.js for front-end and Figma for design collaboration.
+Torangu (international name for _Trang tranh_) is a full-stack social media platform focused on **advanced international typography and layout systems**, with first-class support for both **vertical and horizontal writing modes**. The project explores how modern frontend architecture can support complex, multilingual user interfaces while remaining scalable and maintainable.
+
+The platform is built using **Next.js and React** on the frontend and **Django REST Framework** on the backend, following an API-driven approach suitable for long-term product growth.
 
 ## Key Features
 
-- **Component Library**: Built a set of modular, reusable UI components using React and styled-components in Next.js, focusing on accessibility and responsiveness.
-- **Theming and Customization**: Integrated a theming system that allows easy switching and customization of color palettes, typography, and layout styles using CSS variables and Figma tokens.
-- **Figma Integration**: Collaborated closely with designers by setting up a shared design library in Figma. This library was synchronized with the codebase, ensuring design handoffs were seamless and that design tokens remained consistent across both platforms.
-- **Documentation and Usage Guidelines**: Developed comprehensive documentation with Storybook to showcase components, usage patterns, and best practices, ensuring the design system is easy to adopt by other teams.
+- **Internationalized Layout System**  
+  Dynamic support for horizontal and vertical writing modes (`horizontal-tb`, `vertical-rl`, `vertical-lr`) using CSS logical properties. Layout direction can be switched at the component level without duplicating styles.
+
+- **Component-Based Frontend Architecture**  
+  Reusable and scalable UI components built with React and TypeScript, enabling consistent behavior and faster iteration across the application.
+
+- **Responsive and Accessible UI**  
+  Interfaces designed to adapt across screen sizes while maintaining readability and usability across different writing directions and languages.
+
+- **Complex User Interaction Handling**  
+  Implementation of interactive features such as content creation, feeds, and profile views, with careful management of UI state and transitions.
+
+- **Performance and SEO Optimization**  
+  Leveraged Next.js App Router and server-side rendering (SSR) to improve performance, SEO, and initial load time.
 
 ## Technologies Used
 
-- **Next.js**: For fast, server-rendered React applications.
-- **Figma**: For creating and managing design assets and prototypes.
-- **Styled-Components**: For styling React components with a modular, themable approach.
-- **Storybook**: For building an interactive, documented component library.
+- **Next.js (App Router)** – Server-side rendering, routing, and performance optimization
+- **React and TypeScript** – Component-based UI development with strong type safety
+- **SCSS Modules** – Modular styling with CSS logical properties for international layouts
+- **Django REST Framework** – API-driven backend for authentication and content management
+- **MySQL and Redis** – Data storage and caching
+- **Vercel** – Frontend deployment and preview environments
 
 ## Challenges and Learnings
 
-One key challenge was balancing the need for flexibility with the desire to maintain design consistency. The solution involved creating well-defined design tokens and establishing clear guidelines for when and how components could be customized. Additionally, setting up effective collaboration workflows between designers and developers using Figma and Git was a learning experience that greatly improved the process.
+One of the main challenges was designing a layout system that could gracefully support **non-Latin writing systems**, particularly vertical text used in Japanese, Traditional Chinese, and Mongolian scripts. Many common CSS patterns assume left-to-right, horizontal layouts, which required rethinking spacing, alignment, and component structure.
+
+By adopting **CSS logical properties** and building layout-agnostic components, the frontend became significantly more flexible and future-proof. Another key learning was balancing flexibility with maintainability, ensuring components remained reusable while still supporting complex layout variations.
+
+This project also reinforced the importance of **clean frontend architecture** as UI complexity increases and product requirements evolve.
 
 ## Outcome
 
-The design system is now actively used across multiple projects, leading to faster development cycles, fewer design inconsistencies, and improved collaboration between design and development teams. It has become a foundation for scaling our products efficiently while ensuring a cohesive user experience.
+Torangu is currently in preparation for launch, featuring a scalable frontend architecture capable of supporting diverse languages and complex user interactions. The project demonstrates practical experience in building **production-ready frontend systems**, translating product requirements into robust UI solutions, and continuously iterating on performance and usability.
+
+It serves as both a functional product and a case study in advanced frontend engineering for internationalized applications.
+
+_Staging demo available on request._
